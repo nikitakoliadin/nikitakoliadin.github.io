@@ -42,6 +42,7 @@
     "react-dom": "^16.13.1",
     "react-localization": "^1.0.15",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-scroll-parallax": "^2.3.5"
   }
 }
