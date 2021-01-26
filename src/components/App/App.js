@@ -1,8 +1,20 @@
-import React, {useEffect} from 'react';
+import React, {useLayoutEffect, useEffect} from 'react';
 import styles from './App.module.css';
 import localization from '../../localization/localization';
-import {ParallaxProvider} from 'react-scroll-parallax';
+import {useController, ParallaxProvider} from 'react-scroll-parallax';
 import Greeting from '../Greeting/Greeting';
+
+const ParallaxCache = () => {
+    const {parallaxController} = useController();
+
+    useLayoutEffect(() => {
+        const handler = () => parallaxController.update();
+        window.addEventListener('load', handler);
+        return () => window.removeEventListener('load', handler);
+    }, [parallaxController]);
+
+    return null;
+};
 
 function App() {
     useEffect(() => {
@@ -14,6 +26,7 @@ function App() {
     return (
         <div className={styles.App}>
             <ParallaxProvider>
+                <ParallaxCache/>
                 <Greeting greeting={localization.greeting}
                           centralize={true}
                           size={window.innerWidth / 2}/>
