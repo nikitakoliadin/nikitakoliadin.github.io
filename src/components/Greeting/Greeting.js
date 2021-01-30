@@ -10,16 +10,31 @@ function Greeting(props) {
         <div className={styles.Greeting}>
             <div className={styles.Letters}>
                 {
-                    greetingLetters.map((greetingLetter, index) => (
-                        <Parallax key={`greeting-${index}`}
-                                  x={[
-                                      (centralize ? -size : 0) * (index - Math.floor(greeting.length / 2)),
-                                      size * (index - Math.floor(greeting.length / 2))
-                                  ]}
-                                  className={styles.Latter}>
-                            {greetingLetter}
-                        </Parallax>
-                    ))
+                    greetingLetters.map((greetingLetter, index) => {
+                        let x1 = (centralize ? -size : 0) * (greetingLetters.length % 2 === 0
+                            ? ((index >= greetingLetters.length / 2 ? index + 1 : index) - (greetingLetters.length / 2))
+                            : (index - Math.floor(greeting.length / 2)));
+                        let x2 = size * (greetingLetters.length % 2 === 0
+                            ? ((index >= greetingLetters.length / 2 ? index + 1 : index) - (greetingLetters.length / 2))
+                            : (index - Math.floor(greeting.length / 2)));
+                        x1 = x1 > 0
+                            ? x1 - (greetingLetters.length % 2 === 0 ? size / 2 : 0)
+                            : x1 + (greetingLetters.length % 2 === 0 ? size / 2 : 0);
+                        x2 = x2 > 0
+                            ? x2 - (greetingLetters.length % 2 === 0 ? size / 2 : 0)
+                            : x2 + (greetingLetters.length % 2 === 0 ? size / 2 : 0);
+                        const x = [
+                            x1,
+                            x2
+                        ];
+                        return (
+                            <Parallax key={`greeting-${index}`}
+                                      x={x}
+                                      className={styles.Latter}>
+                                {greetingLetter}
+                            </Parallax>
+                        );
+                    })
                 }
             </div>
         </div>
