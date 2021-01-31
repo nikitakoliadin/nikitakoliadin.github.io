@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import styles from './App.module.css';
-import localization from '../../localization/localization';
-import LinearX from '../LinearX/LinearX';
+import Body from '../Body/Body';
 
 function App() {
     useEffect(() => {
@@ -12,11 +11,7 @@ function App() {
     }, []);
     return (
         <div className={styles.App}>
-            <div className={styles.Greeting}>
-                <LinearX letters={localization.greeting}
-                         centralize={true}
-                         size={window.innerWidth / 2}/>
-            </div>
+            <Body/>
         </div>
     );
 }
