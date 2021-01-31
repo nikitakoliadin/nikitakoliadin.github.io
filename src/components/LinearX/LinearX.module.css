@@ -1,0 +1,9 @@
+.Letters {
+    text-align: center;
+    font-size: calc(10px + 5vmin);
+    color: black;
+}
+
+.Letters .Letter {
+    display: inline-block;
+}
