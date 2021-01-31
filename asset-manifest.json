@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/qThegamEp.github.io/static/css/main.e2d6104c.chunk.css",
-    "main.js": "/qThegamEp.github.io/static/js/main.75b0a65d.chunk.js",
-    "main.js.map": "/qThegamEp.github.io/static/js/main.75b0a65d.chunk.js.map",
+    "main.css": "/qThegamEp.github.io/static/css/main.9866bd72.chunk.css",
+    "main.js": "/qThegamEp.github.io/static/js/main.64acd03e.chunk.js",
+    "main.js.map": "/qThegamEp.github.io/static/js/main.64acd03e.chunk.js.map",
     "runtime-main.js": "/qThegamEp.github.io/static/js/runtime-main.16828f3f.js",
     "runtime-main.js.map": "/qThegamEp.github.io/static/js/runtime-main.16828f3f.js.map",
     "static/css/2.95258f03.chunk.css": "/qThegamEp.github.io/static/css/2.95258f03.chunk.css",
-    "static/js/2.6c00cd9e.chunk.js": "/qThegamEp.github.io/static/js/2.6c00cd9e.chunk.js",
-    "static/js/2.6c00cd9e.chunk.js.map": "/qThegamEp.github.io/static/js/2.6c00cd9e.chunk.js.map",
+    "static/js/2.04b07f41.chunk.js": "/qThegamEp.github.io/static/js/2.04b07f41.chunk.js",
+    "static/js/2.04b07f41.chunk.js.map": "/qThegamEp.github.io/static/js/2.04b07f41.chunk.js.map",
     "index.html": "/qThegamEp.github.io/index.html",
-    "precache-manifest.0c05ab4916ed58f7b5dc336d0fae138a.js": "/qThegamEp.github.io/precache-manifest.0c05ab4916ed58f7b5dc336d0fae138a.js",
+    "precache-manifest.d24dfdc7c98bdd2d645d590a87866231.js": "/qThegamEp.github.io/precache-manifest.d24dfdc7c98bdd2d645d590a87866231.js",
     "service-worker.js": "/qThegamEp.github.io/service-worker.js",
     "static/css/2.95258f03.chunk.css.map": "/qThegamEp.github.io/static/css/2.95258f03.chunk.css.map",
-    "static/css/main.e2d6104c.chunk.css.map": "/qThegamEp.github.io/static/css/main.e2d6104c.chunk.css.map",
-    "static/js/2.6c00cd9e.chunk.js.LICENSE.txt": "/qThegamEp.github.io/static/js/2.6c00cd9e.chunk.js.LICENSE.txt"
+    "static/css/main.9866bd72.chunk.css.map": "/qThegamEp.github.io/static/css/main.9866bd72.chunk.css.map",
+    "static/js/2.04b07f41.chunk.js.LICENSE.txt": "/qThegamEp.github.io/static/js/2.04b07f41.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16828f3f.js",
     "static/css/2.95258f03.chunk.css",
-    "static/js/2.6c00cd9e.chunk.js",
-    "static/css/main.e2d6104c.chunk.css",
-    "static/js/main.75b0a65d.chunk.js"
+    "static/js/2.04b07f41.chunk.js",
+    "static/css/main.9866bd72.chunk.css",
+    "static/js/main.64acd03e.chunk.js"
   ]
 }
