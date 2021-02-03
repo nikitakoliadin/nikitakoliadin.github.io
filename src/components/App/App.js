@@ -3,11 +3,18 @@ import styles from './App.module.css';
 import localization from '../../localization/localization';
 import {useLocation} from 'react-router-dom';
 import queryParser from 'query-string';
+import Header from '../Header/Header';
 import Body from '../Body/Body';
 
 function App() {
     const location = useLocation();
     const [language, setLanguage] = useState();
+
+    function updateLanguage(language) {
+        localization.setLanguage(language.toLowerCase());
+        setLanguage(language);
+    }
+
     useEffect(() => {
         window.scrollTo({
             top: 0,
@@ -23,6 +30,10 @@ function App() {
     }, [location, language]);
     return (
         <div className={styles.App}>
+            <Header languages={localization.getAvailableLanguages()}
+                    activeLanguage={language}
+                    setLanguage={updateLanguage}
+                    languageButtonType={'circle'}/>
             <Body/>
         </div>
     );
