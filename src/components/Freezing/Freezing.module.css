@@ -1,0 +1,495 @@
+.Freezing {
+    background: inherit;
+    z-index: 2;
+}
+
+@media {
+    .Freezing .FullPageFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        animation: fullPageFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .LeftHalfPageFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        animation: leftHalfPageFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .RightHalfPageFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        animation: rightHalfPageFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .FirstBlockFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 15vw;
+        position: fixed;
+        top: 20vh;
+        left: 0;
+        animation: firstBlockFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .SecondBlockFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        width: 20vw;
+        position: fixed;
+        top: 10vh;
+        right: 15vw;
+        animation: secondBlockFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .ThirdBlockFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        width: 10vw;
+        position: fixed;
+        left: 10vw;
+        bottom: 20vh;
+        animation: thirdBlockFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .FourthBlockFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        width: 10vw;
+        position: fixed;
+        left: 20vw;
+        bottom: 20vh;
+        animation: fourthBlockFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .FirstHorizontalLineFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1vh;
+        width: 100vw;
+        position: fixed;
+        top: 15vh;
+        animation: firstHorizontalLineFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .SecondHorizontalLineFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1vh;
+        width: 100vw;
+        position: fixed;
+        top: 75vh;
+        animation: secondHorizontalLineFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .ThirdHorizontalLineFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1vh;
+        width: 100vw;
+        position: fixed;
+        top: 85vh;
+        animation: thirdHorizontalLineFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .FirstVerticalLineFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 1vw;
+        position: fixed;
+        left: 75vw;
+        animation: firstVerticalLineFreezing 10s infinite;
+    }
+}
+
+@media {
+    .Freezing .SecondVerticalLineFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 1vw;
+        position: fixed;
+        left: 80vw;
+        animation: secondVerticalLineFreezing 10s infinite;
+    }
+}
+
+@keyframes fullPageFreezing {
+    88% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    89% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    90% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    91% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes leftHalfPageFreezing {
+    80% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    81% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    82% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes rightHalfPageFreezing {
+    70% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    71% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    72% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    83% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    84% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    85% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes firstBlockFreezing {
+    40% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    41% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    42% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    83% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    84% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    85% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    86% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes secondBlockFreezing {
+    30% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    31% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    32% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    50% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    51% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    52% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    53% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    54% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    55% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    56% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes thirdBlockFreezing {
+    38% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    39% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    40% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    46% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    47% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    48% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    49% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes fourthBlockFreezing {
+    46% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    47% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    48% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    49% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    91% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    92% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    93% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes firstHorizontalLineFreezing {
+    20% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    21% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    22% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    26% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    27% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    28% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    29% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    30% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    90% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    91% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    92% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes secondHorizontalLineFreezing {
+    28% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    29% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    30% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes thirdHorizontalLineFreezing {
+    28% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    29% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    30% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes firstVerticalLineFreezing {
+    27% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    28% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    29% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
+
+@keyframes secondVerticalLineFreezing {
+    27% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    28% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    29% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    91% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+    92% {
+        background: white;
+        mix-blend-mode: difference;
+    }
+    93% {
+        background: transparent;
+        mix-blend-mode: difference;
+    }
+}
