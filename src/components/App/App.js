@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import localization from '../../localization/localization';
 import {useLocation} from 'react-router-dom';
 import queryParser from 'query-string';
+import Freezing from '../Freezing/Freezing';
 import Header from '../Header/Header';
 import Body from '../Body/Body';
 
@@ -30,11 +31,24 @@ function App() {
     }, [location, language]);
     return (
         <div className={styles.App}>
-            <Header languages={localization.getAvailableLanguages()}
-                    activeLanguage={language}
-                    setLanguage={updateLanguage}
-                    languageButtonType={'circle'}/>
-            <Body/>
+            <Freezing fullPageFreezing={true}
+                      leftHalfPageFreezing={true}
+                      rightHalfPageFreezing={true}
+                      firstBlockFreezing={true}
+                      secondBlockFreezing={true}
+                      thirdBlockFreezing={true}
+                      fourthBlockFreezing={true}
+                      firstHorizontalLineFreezing={true}
+                      secondHorizontalLineFreezing={true}
+                      thirdHorizontalLineFreezing={true}
+                      firstVerticalLineFreezing={true}
+                      secondVerticalLineFreezing={true}>
+                <Header languages={localization.getAvailableLanguages()}
+                        activeLanguage={language}
+                        setLanguage={updateLanguage}
+                        languageButtonType={'circle'}/>
+                <Body/>
+            </Freezing>
         </div>
     );
 }
