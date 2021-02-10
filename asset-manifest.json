@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/qThegamEp.github.io/static/css/main.d2bc5da5.chunk.css",
+    "main.css": "/qThegamEp.github.io/static/css/main.c0fa8068.chunk.css",
     "main.js": "/qThegamEp.github.io/static/js/main.74200be1.chunk.js",
     "main.js.map": "/qThegamEp.github.io/static/js/main.74200be1.chunk.js.map",
     "runtime-main.js": "/qThegamEp.github.io/static/js/runtime-main.16828f3f.js",
@@ -9,17 +9,17 @@
     "static/js/2.445c2782.chunk.js": "/qThegamEp.github.io/static/js/2.445c2782.chunk.js",
     "static/js/2.445c2782.chunk.js.map": "/qThegamEp.github.io/static/js/2.445c2782.chunk.js.map",
     "index.html": "/qThegamEp.github.io/index.html",
-    "precache-manifest.a3ddb4daf9db475dde1d5bf29a7f606a.js": "/qThegamEp.github.io/precache-manifest.a3ddb4daf9db475dde1d5bf29a7f606a.js",
+    "precache-manifest.d86c518d0ed4959178ca1e7d2876db2f.js": "/qThegamEp.github.io/precache-manifest.d86c518d0ed4959178ca1e7d2876db2f.js",
     "service-worker.js": "/qThegamEp.github.io/service-worker.js",
     "static/css/2.95258f03.chunk.css.map": "/qThegamEp.github.io/static/css/2.95258f03.chunk.css.map",
-    "static/css/main.d2bc5da5.chunk.css.map": "/qThegamEp.github.io/static/css/main.d2bc5da5.chunk.css.map",
+    "static/css/main.c0fa8068.chunk.css.map": "/qThegamEp.github.io/static/css/main.c0fa8068.chunk.css.map",
     "static/js/2.445c2782.chunk.js.LICENSE.txt": "/qThegamEp.github.io/static/js/2.445c2782.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16828f3f.js",
     "static/css/2.95258f03.chunk.css",
     "static/js/2.445c2782.chunk.js",
-    "static/css/main.d2bc5da5.chunk.css",
+    "static/css/main.c0fa8068.chunk.css",
     "static/js/main.74200be1.chunk.js"
   ]
 }
