@@ -3,7 +3,7 @@
     flex-flow: row;
     align-items: center;
     justify-content: flex-end;
-    min-height: 6vh;
+    min-height: 10vh;
     min-width: 100vw;
     position: fixed;
     top: 0;
@@ -16,9 +16,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    min-height: 6vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    min-height: 8vh;
+    margin: 1vh 1vw;
 }
 
 .Header .Languages .Language {
