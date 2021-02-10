@@ -1,6 +1,6 @@
 .Letters {
     text-align: center;
-    font-size: calc(10vmin);
+    font-size: var(--large-font);
     color: var(--black);
 }
 

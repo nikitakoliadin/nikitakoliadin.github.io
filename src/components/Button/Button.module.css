@@ -5,7 +5,7 @@
     justify-content: center;
     height: 7vh;
     width: 14vw;
-    font-size: calc(3vmin);
+    font-size: var(--medium-font);
     color: var(--white);
     background-color: transparent;
     border: 1px solid var(--white);
@@ -24,7 +24,7 @@
     justify-content: center;
     height: 7vmin;
     width: 7vmin;
-    font-size: calc(3vmin);
+    font-size: var(--medium-font);
     color: var(--white);
     background-color: transparent;
     border: 1px solid var(--white);

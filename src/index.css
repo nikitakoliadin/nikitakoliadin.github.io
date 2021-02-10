@@ -6,6 +6,8 @@
     --020-black: rgba(0, 0, 0, 0.2) !important;
     --014-black: rgba(0, 0, 0, 0.14) !important;
     --012-black: rgba(0, 0, 0, 0.12) !important;
+    --medium-font: calc(3vmin) !important;
+    --large-font: calc(10vmin) !important;
 }
 
 body {
