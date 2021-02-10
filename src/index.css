@@ -1,3 +1,13 @@
+:root {
+    --white: rgba(255, 255, 255, 1) !important;
+    --050-white: rgba(255, 255, 255, 0.5) !important;
+    --black: rgba(0, 0, 0, 1) !important;
+    --030-black: rgba(0, 0, 0, 0.3) !important;
+    --020-black: rgba(0, 0, 0, 0.2) !important;
+    --014-black: rgba(0, 0, 0, 0.14) !important;
+    --012-black: rgba(0, 0, 0, 0.12) !important;
+}
+
 body {
     margin: 0 !important;
     font-family: 'Anonymous Pro', monospace !important;

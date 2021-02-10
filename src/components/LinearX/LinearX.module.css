@@ -1,7 +1,7 @@
 .Letters {
     text-align: center;
     font-size: calc(10vmin);
-    color: black;
+    color: var(--black);
 }
 
 .Letters .Letter {
