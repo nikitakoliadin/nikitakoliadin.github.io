@@ -5,7 +5,7 @@
     justify-content: center;
     height: 7vh;
     width: 14vw;
-    font-size: calc(10px + 1vmin);
+    font-size: calc(3vmin);
     color: rgba(255, 255, 255, 1);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
@@ -24,7 +24,7 @@
     justify-content: center;
     height: 7vmin;
     width: 7vmin;
-    font-size: calc(10px + 1vmin);
+    font-size: calc(3vmin);
     color: rgba(255, 255, 255, 1);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
