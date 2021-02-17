@@ -14,6 +14,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        background: inherit;
         animation: fullPageFreezing 10s infinite;
     }
 }
@@ -29,6 +30,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        background: inherit;
         animation: leftHalfPageFreezing 10s infinite;
     }
 }
@@ -44,6 +46,7 @@
         position: fixed;
         top: 0;
         right: 0;
+        background: inherit;
         animation: rightHalfPageFreezing 10s infinite;
     }
 }
@@ -59,6 +62,7 @@
         position: fixed;
         top: 20vh;
         left: 0;
+        background: inherit;
         animation: firstBlockFreezing 10s infinite;
     }
 }
@@ -74,6 +78,7 @@
         position: fixed;
         top: 10vh;
         right: 15vw;
+        background: inherit;
         animation: secondBlockFreezing 10s infinite;
     }
 }
@@ -89,6 +94,7 @@
         position: fixed;
         left: 10vw;
         bottom: 20vh;
+        background: inherit;
         animation: thirdBlockFreezing 10s infinite;
     }
 }
@@ -104,6 +110,7 @@
         position: fixed;
         left: 20vw;
         bottom: 20vh;
+        background: inherit;
         animation: fourthBlockFreezing 10s infinite;
     }
 }
@@ -118,6 +125,7 @@
         width: 100vw;
         position: fixed;
         top: 15vh;
+        background: inherit;
         animation: firstHorizontalLineFreezing 10s infinite;
     }
 }
@@ -132,6 +140,7 @@
         width: 100vw;
         position: fixed;
         top: 75vh;
+        background: inherit;
         animation: secondHorizontalLineFreezing 10s infinite;
     }
 }
@@ -146,6 +155,7 @@
         width: 100vw;
         position: fixed;
         top: 85vh;
+        background: inherit;
         animation: thirdHorizontalLineFreezing 10s infinite;
     }
 }
@@ -160,6 +170,7 @@
         width: 1vw;
         position: fixed;
         left: 75vw;
+        background: inherit;
         animation: firstVerticalLineFreezing 10s infinite;
     }
 }
@@ -174,322 +185,323 @@
         width: 1vw;
         position: fixed;
         left: 80vw;
+        background: inherit;
         animation: secondVerticalLineFreezing 10s infinite;
     }
 }
 
 @keyframes fullPageFreezing {
     88% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     89% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 295;
+        filter: invert(1);
     }
     90% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 295;
+        filter: invert(1);
     }
     91% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes leftHalfPageFreezing {
     80% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     81% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 290;
+        filter: invert(1);
     }
     82% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes rightHalfPageFreezing {
     70% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     71% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 290;
+        filter: invert(1);
     }
     72% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     83% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     84% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 290;
+        filter: invert(1);
     }
     85% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes firstBlockFreezing {
     40% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     41% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     42% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     83% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     84% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     85% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     86% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes secondBlockFreezing {
     30% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     31% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     32% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     50% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     51% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     52% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     53% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     54% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     55% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     56% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes thirdBlockFreezing {
     38% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     39% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     40% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     46% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     47% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     48% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     49% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes fourthBlockFreezing {
     46% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     47% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     48% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     49% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     91% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     92% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 285;
+        filter: invert(1);
     }
     93% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes firstHorizontalLineFreezing {
     20% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     21% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 280;
+        filter: invert(1);
     }
     22% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     26% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     27% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 280;
+        filter: invert(1);
     }
     28% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     29% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 280;
+        filter: invert(1);
     }
     30% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     90% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     91% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 280;
+        filter: invert(1);
     }
     92% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes secondHorizontalLineFreezing {
     28% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     29% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 280;
+        filter: invert(1);
     }
     30% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes thirdHorizontalLineFreezing {
     28% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     29% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 280;
+        filter: invert(1);
     }
     30% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes firstVerticalLineFreezing {
     27% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     28% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 275;
+        filter: invert(1);
     }
     29% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
 
 @keyframes secondVerticalLineFreezing {
     27% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     28% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 275;
+        filter: invert(1);
     }
     29% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     91% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
     92% {
-        background: var(--white);
-        mix-blend-mode: difference;
+        z-index: 275;
+        filter: invert(1);
     }
     93% {
-        background: transparent;
-        mix-blend-mode: difference;
+        z-index: 200;
+        filter: invert(0);
     }
 }
