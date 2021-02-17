@@ -6,5 +6,5 @@
     min-height: 100vh;
     min-width: 100vw;
     background: var(--white); /* TODO: ADD BACKGROUND IMAGE*/
-    z-index: 1;
+    z-index: 100;
 }

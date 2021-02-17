@@ -1,6 +1,6 @@
 .Freezing {
     background: inherit;
-    z-index: 2;
+    z-index: 200;
 }
 
 @media {

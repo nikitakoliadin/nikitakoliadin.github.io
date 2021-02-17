@@ -3,7 +3,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 300;
 }
 
 .Body .Greeting {
@@ -13,4 +13,5 @@
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
+    z-index: 300;
 }
