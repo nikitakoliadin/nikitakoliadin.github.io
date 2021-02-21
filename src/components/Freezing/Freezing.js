@@ -32,13 +32,15 @@ function Freezing(props) {
         thirdHorizontalLineFreezing = false,
         firstVerticalLineFreezing = false,
         secondVerticalLineFreezing = false,
+        startAnimationDuration = 10,
+        startAnimationDelay = 0,
         children
     } = props;
     useEffect(() => {
         freezingRefs.current.forEach((freezingRef) => {
-            freezing(freezingRef, 10, 0);
+            freezing(freezingRef, startAnimationDuration, startAnimationDelay);
         });
-    }, []);
+    }, [startAnimationDuration, startAnimationDelay]);
     return (
         <div className={styles.Freezing}>
             {
@@ -109,6 +111,8 @@ Freezing.propTypes = {
     thirdHorizontalLineFreezing: PropTypes.bool,
     firstVerticalLineFreezing: PropTypes.bool,
     secondVerticalLineFreezing: PropTypes.bool,
+    startAnimationDuration: PropTypes.number,
+    startAnimationDelay: PropTypes.number,
 }
 
 export default Freezing;

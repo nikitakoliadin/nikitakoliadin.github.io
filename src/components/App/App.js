@@ -42,7 +42,9 @@ function App() {
                       secondHorizontalLineFreezing={true}
                       thirdHorizontalLineFreezing={true}
                       firstVerticalLineFreezing={true}
-                      secondVerticalLineFreezing={true}>
+                      secondVerticalLineFreezing={true}
+                      startAnimationDuration={10}
+                      startAnimationDelay={0}>
                 <Header languages={localization.getAvailableLanguages()}
                         activeLanguage={language}
                         setLanguage={updateLanguage}
