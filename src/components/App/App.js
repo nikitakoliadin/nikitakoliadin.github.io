@@ -44,7 +44,11 @@ function App() {
                       firstVerticalLineFreezing={true}
                       secondVerticalLineFreezing={true}
                       startAnimationDuration={10}
-                      startAnimationDelay={0}>
+                      minAnimationDuration={8}
+                      maxAnimationDuration={12}
+                      startAnimationDelay={0}
+                      minAnimationDelay={0}
+                      maxAnimationDelay={3}>
                 <Header languages={localization.getAvailableLanguages()}
                         activeLanguage={language}
                         setLanguage={updateLanguage}

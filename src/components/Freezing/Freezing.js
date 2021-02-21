@@ -2,6 +2,11 @@ import React, {useRef, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import styles from './Freezing.module.css';
 
+let minFreezingAnimationDuration = undefined;
+let maxFreezingAnimationDuration = undefined;
+let minFreezingAnimationDelay = undefined;
+let maxFreezingAnimationDelay = undefined;
+
 function randomInteger(min, max) {
     const randomInteger = min + Math.random() * (max + 1 - min);
     return Math.floor(randomInteger);
@@ -13,7 +18,7 @@ function freezing(freezingRef, duration, delay) {
     setTimeout(() => {
         freezingRef.style.animationDuration = '0s';
         freezingRef.style.animationDelay = '0s';
-        freezing(freezingRef, randomInteger(8, 12), randomInteger(0, 3));
+        freezing(freezingRef, randomInteger(minFreezingAnimationDuration, maxFreezingAnimationDuration), randomInteger(minFreezingAnimationDelay, maxFreezingAnimationDelay));
     }, (duration + delay) * 1000);
 }
 
@@ -33,14 +38,22 @@ function Freezing(props) {
         firstVerticalLineFreezing = false,
         secondVerticalLineFreezing = false,
         startAnimationDuration = 10,
+        minAnimationDuration = 8,
+        maxAnimationDuration = 12,
         startAnimationDelay = 0,
+        minAnimationDelay = 0,
+        maxAnimationDelay = 3,
         children
     } = props;
     useEffect(() => {
+        minFreezingAnimationDuration = minAnimationDuration;
+        maxFreezingAnimationDuration = maxAnimationDuration;
+        minFreezingAnimationDelay = minAnimationDelay
+        maxFreezingAnimationDelay = maxAnimationDelay;
         freezingRefs.current.forEach((freezingRef) => {
             freezing(freezingRef, startAnimationDuration, startAnimationDelay);
         });
-    }, [startAnimationDuration, startAnimationDelay]);
+    }, [minAnimationDuration, maxAnimationDuration, minAnimationDelay, maxAnimationDelay, startAnimationDuration, startAnimationDelay]);
     return (
         <div className={styles.Freezing}>
             {
@@ -112,7 +125,11 @@ Freezing.propTypes = {
     firstVerticalLineFreezing: PropTypes.bool,
     secondVerticalLineFreezing: PropTypes.bool,
     startAnimationDuration: PropTypes.number,
+    minAnimationDuration: PropTypes.number,
+    maxAnimationDuration: PropTypes.number,
     startAnimationDelay: PropTypes.number,
+    minAnimationDelay: PropTypes.number,
+    maxAnimationDelay: PropTypes.number,
 }
 
 export default Freezing;
