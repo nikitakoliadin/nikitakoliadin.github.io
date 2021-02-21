@@ -2,6 +2,21 @@ import React, {useRef, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import styles from './Freezing.module.css';
 
+function randomInteger(min, max) {
+    const randomInteger = min + Math.random() * (max + 1 - min);
+    return Math.floor(randomInteger);
+}
+
+function freezing(freezingRef, duration, delay) {
+    freezingRef.style.animationDuration = `${duration}s`;
+    freezingRef.style.animationDelay = `${delay}s`;
+    setTimeout(() => {
+        freezingRef.style.animationDuration = '0s';
+        freezingRef.style.animationDelay = '0s';
+        freezing(freezingRef, randomInteger(8, 12), randomInteger(0, 3));
+    }, (duration + delay) * 1000);
+}
+
 function Freezing(props) {
     const freezingRefs = useRef([]);
     const {
@@ -21,7 +36,7 @@ function Freezing(props) {
     } = props;
     useEffect(() => {
         freezingRefs.current.forEach((freezingRef) => {
-            freezingRef.style.animationDuration = '10s';
+            freezing(freezingRef, 10, 0);
         });
     }, []);
     return (
