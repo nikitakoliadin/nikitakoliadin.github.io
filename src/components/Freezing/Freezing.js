@@ -23,6 +23,7 @@ function freezing(freezingRef, duration, delay) {
 }
 
 function Freezing(props) {
+    let freezingElementsCounter = 0;
     const freezingRefs = useRef([]);
     const {
         fullPageFreezing = false,
@@ -51,57 +52,57 @@ function Freezing(props) {
         minFreezingAnimationDelay = minAnimationDelay
         maxFreezingAnimationDelay = maxAnimationDelay;
         freezingRefs.current.forEach((freezingRef) => {
-            freezing(freezingRef, startAnimationDuration, startAnimationDelay);
+            freezingRef && freezing(freezingRef, startAnimationDuration, startAnimationDelay);
         });
     }, [minAnimationDuration, maxAnimationDuration, minAnimationDelay, maxAnimationDelay, startAnimationDuration, startAnimationDelay]);
     return (
         <div className={styles.Freezing}>
             {
-                fullPageFreezing && <div ref={(element) => freezingRefs.current[0] = element}
+                fullPageFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                          className={styles.FullPageFreezing}/>
             }
             {
-                leftHalfPageFreezing && <div ref={(element) => freezingRefs.current[1] = element}
+                leftHalfPageFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                              className={styles.LeftHalfPageFreezing}/>
             }
             {
-                rightHalfPageFreezing && <div ref={(element) => freezingRefs.current[2] = element}
+                rightHalfPageFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                               className={styles.RightHalfPageFreezing}/>
             }
             {
-                firstBlockFreezing && <div ref={(element) => freezingRefs.current[3] = element}
+                firstBlockFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                            className={styles.FirstBlockFreezing}/>
             }
             {
-                secondBlockFreezing && <div ref={(element) => freezingRefs.current[4] = element}
+                secondBlockFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                             className={styles.SecondBlockFreezing}/>
             }
             {
-                thirdBlockFreezing && <div ref={(element) => freezingRefs.current[5] = element}
+                thirdBlockFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                            className={styles.ThirdBlockFreezing}/>
             }
             {
-                fourthBlockFreezing && <div ref={(element) => freezingRefs.current[6] = element}
+                fourthBlockFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                             className={styles.FourthBlockFreezing}/>
             }
             {
-                firstHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[7] = element}
+                firstHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                                     className={styles.FirstHorizontalLineFreezing}/>
             }
             {
-                secondHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[8] = element}
+                secondHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                                      className={styles.SecondHorizontalLineFreezing}/>
             }
             {
-                thirdHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[9] = element}
+                thirdHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                                     className={styles.ThirdHorizontalLineFreezing}/>
             }
             {
-                firstVerticalLineFreezing && <div ref={(element) => freezingRefs.current[10] = element}
+                firstVerticalLineFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                                   className={styles.FirstVerticalLineFreezing}/>
             }
             {
-                secondVerticalLineFreezing && <div ref={(element) => freezingRefs.current[11] = element}
+                secondVerticalLineFreezing && <div ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
                                                    className={styles.SecondVerticalLineFreezing}/>
             }
             {
