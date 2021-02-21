@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import styles from './Freezing.module.css';
 
 function Freezing(props) {
+    const freezingRefs = useRef([]);
     const {
         fullPageFreezing = false,
         leftHalfPageFreezing = false,
@@ -18,43 +19,60 @@ function Freezing(props) {
         secondVerticalLineFreezing = false,
         children
     } = props;
+    useEffect(() => {
+        freezingRefs.current.forEach((freezingRef) => {
+            freezingRef.style.animationDuration = '10s';
+        });
+    }, []);
     return (
         <div className={styles.Freezing}>
             {
-                fullPageFreezing && <div className={styles.FullPageFreezing}/>
+                fullPageFreezing && <div ref={(element) => freezingRefs.current[0] = element}
+                                         className={styles.FullPageFreezing}/>
             }
             {
-                leftHalfPageFreezing && <div className={styles.LeftHalfPageFreezing}/>
+                leftHalfPageFreezing && <div ref={(element) => freezingRefs.current[1] = element}
+                                             className={styles.LeftHalfPageFreezing}/>
             }
             {
-                rightHalfPageFreezing && <div className={styles.RightHalfPageFreezing}/>
+                rightHalfPageFreezing && <div ref={(element) => freezingRefs.current[2] = element}
+                                              className={styles.RightHalfPageFreezing}/>
             }
             {
-                firstBlockFreezing && <div className={styles.FirstBlockFreezing}/>
+                firstBlockFreezing && <div ref={(element) => freezingRefs.current[3] = element}
+                                           className={styles.FirstBlockFreezing}/>
             }
             {
-                secondBlockFreezing && <div className={styles.SecondBlockFreezing}/>
+                secondBlockFreezing && <div ref={(element) => freezingRefs.current[4] = element}
+                                            className={styles.SecondBlockFreezing}/>
             }
             {
-                thirdBlockFreezing && <div className={styles.ThirdBlockFreezing}/>
+                thirdBlockFreezing && <div ref={(element) => freezingRefs.current[5] = element}
+                                           className={styles.ThirdBlockFreezing}/>
             }
             {
-                fourthBlockFreezing && <div className={styles.FourthBlockFreezing}/>
+                fourthBlockFreezing && <div ref={(element) => freezingRefs.current[6] = element}
+                                            className={styles.FourthBlockFreezing}/>
             }
             {
-                firstHorizontalLineFreezing && <div className={styles.FirstHorizontalLineFreezing}/>
+                firstHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[7] = element}
+                                                    className={styles.FirstHorizontalLineFreezing}/>
             }
             {
-                secondHorizontalLineFreezing && <div className={styles.SecondHorizontalLineFreezing}/>
+                secondHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[8] = element}
+                                                     className={styles.SecondHorizontalLineFreezing}/>
             }
             {
-                thirdHorizontalLineFreezing && <div className={styles.ThirdHorizontalLineFreezing}/>
+                thirdHorizontalLineFreezing && <div ref={(element) => freezingRefs.current[9] = element}
+                                                    className={styles.ThirdHorizontalLineFreezing}/>
             }
             {
-                firstVerticalLineFreezing && <div className={styles.FirstVerticalLineFreezing}/>
+                firstVerticalLineFreezing && <div ref={(element) => freezingRefs.current[10] = element}
+                                                  className={styles.FirstVerticalLineFreezing}/>
             }
             {
-                secondVerticalLineFreezing && <div className={styles.SecondVerticalLineFreezing}/>
+                secondVerticalLineFreezing && <div ref={(element) => freezingRefs.current[11] = element}
+                                                   className={styles.SecondVerticalLineFreezing}/>
             }
             {
                 children

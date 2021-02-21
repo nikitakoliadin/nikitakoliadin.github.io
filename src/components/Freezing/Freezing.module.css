@@ -15,7 +15,9 @@
         top: 0;
         left: 0;
         background: inherit;
-        animation: fullPageFreezing 10s infinite;
+        animation: fullPageFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -31,7 +33,9 @@
         top: 0;
         left: 0;
         background: inherit;
-        animation: leftHalfPageFreezing 10s infinite;
+        animation: leftHalfPageFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -47,7 +51,9 @@
         top: 0;
         right: 0;
         background: inherit;
-        animation: rightHalfPageFreezing 10s infinite;
+        animation: rightHalfPageFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -63,7 +69,9 @@
         top: 20vh;
         left: 0;
         background: inherit;
-        animation: firstBlockFreezing 10s infinite;
+        animation: firstBlockFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -79,7 +87,9 @@
         top: 10vh;
         right: 15vw;
         background: inherit;
-        animation: secondBlockFreezing 10s infinite;
+        animation: secondBlockFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -95,7 +105,9 @@
         left: 10vw;
         bottom: 20vh;
         background: inherit;
-        animation: thirdBlockFreezing 10s infinite;
+        animation: thirdBlockFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -111,7 +123,9 @@
         left: 20vw;
         bottom: 20vh;
         background: inherit;
-        animation: fourthBlockFreezing 10s infinite;
+        animation: fourthBlockFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -126,7 +140,9 @@
         position: fixed;
         top: 15vh;
         background: inherit;
-        animation: firstHorizontalLineFreezing 10s infinite;
+        animation: firstHorizontalLineFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -141,7 +157,9 @@
         position: fixed;
         top: 75vh;
         background: inherit;
-        animation: secondHorizontalLineFreezing 10s infinite;
+        animation: secondHorizontalLineFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -156,7 +174,9 @@
         position: fixed;
         top: 85vh;
         background: inherit;
-        animation: thirdHorizontalLineFreezing 10s infinite;
+        animation: thirdHorizontalLineFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -171,7 +191,9 @@
         position: fixed;
         left: 75vw;
         background: inherit;
-        animation: firstVerticalLineFreezing 10s infinite;
+        animation: firstVerticalLineFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
@@ -186,7 +208,9 @@
         position: fixed;
         left: 80vw;
         background: inherit;
-        animation: secondVerticalLineFreezing 10s infinite;
+        animation: secondVerticalLineFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
     }
 }
 
