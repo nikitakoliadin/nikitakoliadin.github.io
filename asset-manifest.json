@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/qThegamEp.github.io/static/css/main.d2f94083.chunk.css",
-    "main.js": "/qThegamEp.github.io/static/js/main.74200be1.chunk.js",
-    "main.js.map": "/qThegamEp.github.io/static/js/main.74200be1.chunk.js.map",
+    "main.css": "/qThegamEp.github.io/static/css/main.bbc584ea.chunk.css",
+    "main.js": "/qThegamEp.github.io/static/js/main.ce2fa061.chunk.js",
+    "main.js.map": "/qThegamEp.github.io/static/js/main.ce2fa061.chunk.js.map",
     "runtime-main.js": "/qThegamEp.github.io/static/js/runtime-main.16828f3f.js",
     "runtime-main.js.map": "/qThegamEp.github.io/static/js/runtime-main.16828f3f.js.map",
     "static/css/2.95258f03.chunk.css": "/qThegamEp.github.io/static/css/2.95258f03.chunk.css",
     "static/js/2.445c2782.chunk.js": "/qThegamEp.github.io/static/js/2.445c2782.chunk.js",
     "static/js/2.445c2782.chunk.js.map": "/qThegamEp.github.io/static/js/2.445c2782.chunk.js.map",
     "index.html": "/qThegamEp.github.io/index.html",
-    "precache-manifest.73b92b9250019bfd042297920183a177.js": "/qThegamEp.github.io/precache-manifest.73b92b9250019bfd042297920183a177.js",
+    "precache-manifest.f3096941f83f55e5e7a54ee282b288a0.js": "/qThegamEp.github.io/precache-manifest.f3096941f83f55e5e7a54ee282b288a0.js",
     "service-worker.js": "/qThegamEp.github.io/service-worker.js",
     "static/css/2.95258f03.chunk.css.map": "/qThegamEp.github.io/static/css/2.95258f03.chunk.css.map",
-    "static/css/main.d2f94083.chunk.css.map": "/qThegamEp.github.io/static/css/main.d2f94083.chunk.css.map",
+    "static/css/main.bbc584ea.chunk.css.map": "/qThegamEp.github.io/static/css/main.bbc584ea.chunk.css.map",
     "static/js/2.445c2782.chunk.js.LICENSE.txt": "/qThegamEp.github.io/static/js/2.445c2782.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16828f3f.js",
     "static/css/2.95258f03.chunk.css",
     "static/js/2.445c2782.chunk.js",
-    "static/css/main.d2f94083.chunk.css",
-    "static/js/main.74200be1.chunk.js"
+    "static/css/main.bbc584ea.chunk.css",
+    "static/js/main.ce2fa061.chunk.js"
   ]
 }
