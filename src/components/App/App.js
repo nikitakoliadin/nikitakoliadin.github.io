@@ -1,15 +1,27 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import styles from './App.module.css';
 import localizations from '../../localizations/localizations';
 import {useLocation} from 'react-router-dom';
 import queryParser from 'query-string';
+import {useLocalStorage} from '../../hooks/useLocalStorage';
 import Freezing from '../Freezing/Freezing';
 import Header from '../Header/Header';
 import Body from '../Body/Body';
 
 function App() {
     const location = useLocation();
-    const [language, setLanguage] = useState();
+    const [language, setLanguage] = useLocalStorage('language', defineLanguage, (language) => language && localizations.setLanguage(language));
+
+    function defineLanguage() {
+        const {language} = queryParser.parse(location.search);
+        if (language) {
+            localizations.setLanguage(language.toString().toLowerCase());
+        } else {
+            const defaultLanguage = localizations.getAvailableLanguages()[0];
+            localizations.setLanguage(defaultLanguage);
+        }
+        return localizations.getLanguage();
+    }
 
     function updateLanguage(language) {
         localizations.setLanguage(language.toLowerCase());
@@ -25,10 +37,8 @@ function App() {
     useEffect(() => {
         if (language) {
             console.log(`Language = ${language}`);
-        } else {
-            defineLanguage(location, setLanguage);
         }
-    }, [location, language]);
+    }, [language]);
     return (
         <div className={styles.App}>
             <Freezing fullPageFreezing={true}
@@ -57,17 +67,6 @@ function App() {
             </Freezing>
         </div>
     );
-}
-
-function defineLanguage(location, setLanguage) {
-    const {language} = queryParser.parse(location.search);
-    if (language) {
-        localizations.setLanguage(language.toString().toLowerCase());
-    } else {
-        const defaultLanguage = localizations.getAvailableLanguages()[0];
-        localizations.setLanguage(defaultLanguage);
-    }
-    setLanguage(localizations.getLanguage());
 }
 
 export default App;
