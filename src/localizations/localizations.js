@@ -1,6 +1,6 @@
 import LocalizedStrings from 'react-localization';
 
-let localization = new LocalizedStrings({
+let localizations = new LocalizedStrings({
     en: {
         greeting: 'HELLO',
     },
@@ -12,4 +12,4 @@ let localization = new LocalizedStrings({
     }
 });
 
-export default localization;
+export default localizations;

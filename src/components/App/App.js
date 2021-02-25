@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styles from './App.module.css';
-import localization from '../../localization/localization';
+import localizations from '../../localizations/localizations';
 import {useLocation} from 'react-router-dom';
 import queryParser from 'query-string';
 import Freezing from '../Freezing/Freezing';
@@ -12,7 +12,7 @@ function App() {
     const [language, setLanguage] = useState();
 
     function updateLanguage(language) {
-        localization.setLanguage(language.toLowerCase());
+        localizations.setLanguage(language.toLowerCase());
         setLanguage(language);
     }
 
@@ -49,7 +49,7 @@ function App() {
                       startAnimationDelay={0}
                       minAnimationDelay={0}
                       maxAnimationDelay={3}>
-                <Header languages={localization.getAvailableLanguages()}
+                <Header languages={localizations.getAvailableLanguages()}
                         activeLanguage={language}
                         setLanguage={updateLanguage}
                         languageButtonType={'circle'}/>
@@ -62,12 +62,12 @@ function App() {
 function defineLanguage(location, setLanguage) {
     const {language} = queryParser.parse(location.search);
     if (language) {
-        localization.setLanguage(language.toString().toLowerCase());
+        localizations.setLanguage(language.toString().toLowerCase());
     } else {
-        const defaultLanguage = localization.getAvailableLanguages()[0];
-        localization.setLanguage(defaultLanguage);
+        const defaultLanguage = localizations.getAvailableLanguages()[0];
+        localizations.setLanguage(defaultLanguage);
     }
-    setLanguage(localization.getLanguage());
+    setLanguage(localizations.getLanguage());
 }
 
 export default App;
