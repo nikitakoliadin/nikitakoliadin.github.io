@@ -10,7 +10,7 @@ import Body from '../Body/Body';
 
 function App() {
     const location = useLocation();
-    const [language, setLanguage] = useLocalStorage('language', defineLanguage, (language) => language && localizations.setLanguage(language));
+    const [language, setLanguage] = useLocalStorage('language', defineLanguage, (language) => language && localizations.setLanguage(language.toLowerCase()), (language) => language && localizations.setLanguage(language.toLowerCase()));
 
     function defineLanguage() {
         const {language} = queryParser.parse(location.search);
@@ -21,11 +21,6 @@ function App() {
             localizations.setLanguage(defaultLanguage);
         }
         return localizations.getLanguage();
-    }
-
-    function updateLanguage(language) {
-        localizations.setLanguage(language.toLowerCase());
-        setLanguage(language);
     }
 
     useEffect(() => {
@@ -61,7 +56,7 @@ function App() {
                       maxAnimationDelay={3}>
                 <Header languages={localizations.getAvailableLanguages()}
                         activeLanguage={language}
-                        setLanguage={updateLanguage}
+                        setLanguage={setLanguage}
                         languageButtonType={'circle'}/>
                 <Body/>
             </Freezing>
