@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import styles from './Freezing.module.css';
+import {ReactComponent as FirstImageFreezing} from './firstImageFreezing.svg';
 
 let minFreezingAnimationDuration = undefined;
 let maxFreezingAnimationDuration = undefined;
@@ -38,6 +39,7 @@ function Freezing(props) {
         thirdHorizontalLineFreezing = false,
         firstVerticalLineFreezing = false,
         secondVerticalLineFreezing = false,
+        firstImageFreezing = false,
         startAnimationDuration = 10,
         minAnimationDuration = 8,
         maxAnimationDuration = 12,
@@ -106,6 +108,10 @@ function Freezing(props) {
                                                    className={styles.SecondVerticalLineFreezing}/>
             }
             {
+                firstImageFreezing && <FirstImageFreezing ref={(element) => freezingRefs.current[freezingElementsCounter++] = element}
+                                                          className={styles.FirstImageFreezing}/>
+            }
+            {
                 children
             }
         </div>
@@ -125,6 +131,7 @@ Freezing.propTypes = {
     thirdHorizontalLineFreezing: PropTypes.bool,
     firstVerticalLineFreezing: PropTypes.bool,
     secondVerticalLineFreezing: PropTypes.bool,
+    firstImageFreezing: PropTypes.bool,
     startAnimationDuration: PropTypes.number,
     minAnimationDuration: PropTypes.number,
     maxAnimationDuration: PropTypes.number,

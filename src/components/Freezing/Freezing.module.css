@@ -214,6 +214,27 @@
     }
 }
 
+@media {
+    .Freezing .FirstImageFreezing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: inherit;
+        z-index: 270;
+    }
+
+    .Freezing .FirstImageFreezing path {
+        animation: firstImageFreezing 10s infinite;
+        opacity: 0;
+    }
+}
+
 @keyframes fullPageFreezing {
     88% {
         z-index: 200;
@@ -527,5 +548,68 @@
     93% {
         z-index: 200;
         filter: invert(0);
+    }
+}
+
+@keyframes firstImageFreezing {
+    90% {
+        opacity: 0;
+        z-index: 200;
+        filter: invert(0);
+        mix-blend-mode: difference;
+    }
+    91% {
+        opacity: 1;
+        z-index: 270;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
+    92% {
+        opacity: 0;
+        z-index: 200;
+        filter: invert(0);
+        mix-blend-mode: difference;
+    }
+    93% {
+        opacity: 1;
+        z-index: 270;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
+    94% {
+        opacity: 0;
+        z-index: 200;
+        filter: invert(0);
+        mix-blend-mode: difference;
+    }
+    95% {
+        opacity: 1;
+        z-index: 270;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
+    96% {
+        opacity: 0;
+        z-index: 200;
+        filter: invert(0);
+        mix-blend-mode: difference;
+    }
+    97% {
+        opacity: 1;
+        z-index: 270;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
+    99% {
+        opacity: 1;
+        z-index: 270;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
+    100% {
+        opacity: 0;
+        z-index: 200;
+        filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
