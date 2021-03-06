@@ -48,6 +48,7 @@ function App() {
                       thirdHorizontalLineFreezing={true}
                       firstVerticalLineFreezing={true}
                       secondVerticalLineFreezing={true}
+                      firstImageFreezing={true}
                       startAnimationDuration={10}
                       minAnimationDuration={8}
                       maxAnimationDuration={12}
