@@ -227,9 +227,6 @@
         left: 0;
         background: inherit;
         z-index: 270;
-    }
-
-    .Freezing .FirstImageFreezing path {
         animation: firstImageFreezing 10s infinite;
         opacity: 0;
     }
@@ -553,60 +550,70 @@
 
 @keyframes firstImageFreezing {
     90% {
+        background: transparent;
         opacity: 0;
         z-index: 200;
         filter: invert(0);
         mix-blend-mode: difference;
     }
     91% {
+        background: transparent;
         opacity: 1;
         z-index: 270;
         filter: invert(1);
         mix-blend-mode: difference;
     }
     92% {
+        background: transparent;
         opacity: 0;
         z-index: 200;
         filter: invert(0);
         mix-blend-mode: difference;
     }
     93% {
+        background: transparent;
         opacity: 1;
         z-index: 270;
         filter: invert(1);
         mix-blend-mode: difference;
     }
     94% {
+        background: transparent;
         opacity: 0;
         z-index: 200;
         filter: invert(0);
         mix-blend-mode: difference;
     }
     95% {
+        background: transparent;
         opacity: 1;
         z-index: 270;
         filter: invert(1);
         mix-blend-mode: difference;
     }
     96% {
+        background: transparent;
         opacity: 0;
         z-index: 200;
         filter: invert(0);
         mix-blend-mode: difference;
     }
     97% {
+        background: transparent;
         opacity: 1;
         z-index: 270;
         filter: invert(1);
         mix-blend-mode: difference;
     }
     99% {
+        background: transparent;
         opacity: 1;
         z-index: 270;
         filter: invert(1);
         mix-blend-mode: difference;
     }
     100% {
+        background: transparent;
         opacity: 0;
         z-index: 200;
         filter: invert(0);
