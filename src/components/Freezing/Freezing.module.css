@@ -226,8 +226,10 @@
         top: 0;
         left: 0;
         background: inherit;
+        animation: firstImageFreezing;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
         z-index: 270;
-        animation: firstImageFreezing 10s infinite;
         opacity: 0;
     }
 }
