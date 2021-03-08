@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 import Button from '../Button/Button';
 
 function Header(props) {
-    const {languages, activeLanguage = languages[0], languageButtonType = 'rectangle'} = props;
+    const {languages, activeLanguage = languages[0], languageButtonType} = props;
     const {setLanguage} = props;
     return (
         <div className={styles.Header}>

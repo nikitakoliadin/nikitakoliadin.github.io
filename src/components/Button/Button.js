@@ -19,7 +19,7 @@ function Button(props) {
 
 Button.propTypes = {
     reference: PropTypes.object,
-    type: PropTypes.string,
+    type: PropTypes.oneOf(['rectangle', 'circle']),
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
 };
