@@ -13,7 +13,7 @@
     outline: none;
     z-index: 100;
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
-    box-shadow: 0 3px 5px -1px var(--020-black), 0 6px 10px 0 var(--014-black), 0 1px 18px 0 var(--012-black);
+    box-shadow: 0 0 3px 2px var(--050-white);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
@@ -32,7 +32,7 @@
     outline: none;
     z-index: 100;
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
-    box-shadow: 0 3px 5px -1px var(--020-black), 0 6px 10px 0 var(--014-black), 0 1px 18px 0 var(--012-black);
+    box-shadow: 0 0 3px 2px var(--050-white);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
@@ -51,6 +51,6 @@
 .CircleButton:disabled {
     color: var(--050-white);
     border: 1px solid var(--050-white);
-    box-shadow: 0 0 0 0 var(--030-black);
+    box-shadow: none;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
