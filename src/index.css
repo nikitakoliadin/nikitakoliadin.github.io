@@ -1,9 +1,9 @@
 :root {
+    --black: rgba(0, 0, 0, 1) !important;
     --white: rgba(255, 255, 255, 1) !important;
     --050-white: rgba(255, 255, 255, 0.5) !important;
-    --black: rgba(0, 0, 0, 1) !important;
-    --medium-font: calc(3vmin) !important;
     --large-font: calc(10vmin) !important;
+    --medium-font: calc(3vmin) !important;
 }
 
 body {
