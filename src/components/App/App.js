@@ -7,6 +7,7 @@ import {useLocalStorage} from '../../hooks/useLocalStorage';
 import Freezing from '../Freezing/Freezing';
 import Header from '../Header/Header';
 import Body from '../Body/Body';
+import Footer from '../Footer/Footer';
 
 function App() {
     const location = useLocation();
@@ -60,6 +61,7 @@ function App() {
                         setLanguage={setLanguage}
                         languageButtonType={'circle'}/>
                 <Body/>
+                <Footer/>
             </Freezing>
         </div>
     );
