@@ -1,0 +1,129 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    mix-blend-mode: difference;
+    z-index: 400;
+}
+
+.Footer .Row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 10vw 0 0;
+    z-index: 400;
+}
+
+.Footer .Row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 25vw 0 0;
+    z-index: 400;
+}
+
+.Footer .Row3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    z-index: 400;
+}
+
+.Footer .Row4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 0 0 25vw;
+    z-index: 400;
+}
+
+.Footer .Row5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 0 0 10vw;
+    z-index: 400;
+}
+
+.Footer .Row1 .Link,
+.Footer .Row2 .Link,
+.Footer .Row3 .Link,
+.Footer .Row4 .Link,
+.Footer .Row5 .Link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 25px;
+    outline: none;
+    z-index: 400;
+    box-shadow: -4px 0 2px -2px var(--050-white), 4px 0 2px -2px var(--050-white);
+    transition: box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.Footer .Row1 .Link:hover,
+.Footer .Row2 .Link:hover,
+.Footer .Row3 .Link:hover,
+.Footer .Row4 .Link:hover,
+.Footer .Row5 .Link:hover {
+    box-shadow: 0 0 2px 2px var(--white);
+    transition: box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.Footer .Row1 .Link .Logo,
+.Footer .Row2 .Link .Logo,
+.Footer .Row3 .Link .Logo,
+.Footer .Row4 .Link .Logo,
+.Footer .Row5 .Link .Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 0;
+    background: transparent;
+    opacity: 1;
+    z-index: 400;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+.Footer .Row1 .Link .Logo svg,
+.Footer .Row2 .Link .Logo svg,
+.Footer .Row3 .Link .Logo svg,
+.Footer .Row4 .Link .Logo svg,
+.Footer .Row5 .Link .Logo svg {
+    height: 30px;
+    width: 30px;
+}
+
+.Footer .Row1 .Link .Text,
+.Footer .Row2 .Link .Text,
+.Footer .Row3 .Link .Text,
+.Footer .Row4 .Link .Text,
+.Footer .Row5 .Link .Text {
+    font-size: var(--medium-font);
+    color: var(--white);
+    filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
+}
