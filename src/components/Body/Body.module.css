@@ -1,6 +1,6 @@
 .Body {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 300;
@@ -8,7 +8,7 @@
 
 .Body .Greeting {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;

@@ -1,6 +1,6 @@
 .Header {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     width: 100vw;
