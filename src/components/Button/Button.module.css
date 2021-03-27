@@ -11,7 +11,7 @@
     border: 1px solid var(--white);
     border-radius: 10px;
     outline: none;
-    z-index: 500;
+    z-index: 600;
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
     box-shadow: 0 0 3px 2px var(--050-white);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -30,7 +30,7 @@
     border: 1px solid var(--white);
     border-radius: 50%;
     outline: none;
-    z-index: 500;
+    z-index: 600;
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
     box-shadow: 0 0 3px 2px var(--050-white);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
