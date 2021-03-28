@@ -5,6 +5,5 @@
 * Add dynamic switching of freezing
 * Fix freezing animations
 * Fix header buttons
-* Update color styles
 * Create body
 * Create background

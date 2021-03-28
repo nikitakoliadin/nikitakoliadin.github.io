@@ -88,8 +88,17 @@
 .Footer .Row3 .Link:hover,
 .Footer .Row4 .Link:hover,
 .Footer .Row5 .Link:hover {
-    box-shadow: 0 0 2px 2px var(--white);
-    transition: box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0 0 10px 1px var(--white);
+    transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.Footer .Row1 .Link:focus,
+.Footer .Row2 .Link:focus,
+.Footer .Row3 .Link:focus,
+.Footer .Row4 .Link:focus,
+.Footer .Row5 .Link:focus {
+    box-shadow: 0 0 10px 3px var(--white);
+    transition: box-shadow 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .Footer .Row1 .Link .Logo,

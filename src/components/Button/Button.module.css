@@ -13,8 +13,8 @@
     outline: none;
     z-index: 600;
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
-    box-shadow: 0 0 3px 2px var(--050-white);
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0 0 3px 3px var(--050-white);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .CircleButton {
@@ -32,14 +32,14 @@
     outline: none;
     z-index: 600;
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
-    box-shadow: 0 0 3px 2px var(--050-white);
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0 0 3px 3px var(--050-white);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .RectangleButton:hover:not(:disabled),
 .CircleButton:hover:not(:disabled) {
-    border: 2px solid var(--white);
-    transition: border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: 0 0 10px 1px var(--white);
+    transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .RectangleButton:focus,
@@ -49,8 +49,7 @@
 
 .RectangleButton:disabled,
 .CircleButton:disabled {
-    color: var(--050-white);
-    border: 1px solid var(--050-white);
-    box-shadow: none;
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: 2px solid var(--white);
+    box-shadow: 0 0 10px 3px var(--white);
+    transition: border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
