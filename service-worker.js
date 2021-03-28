@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/qThegamEp.github.io/precache-manifest.c2422756d95650725efff5e7edd89f26.js"
+  "/qThegamEp.github.io/precache-manifest.1048957c849954becbb3d4075b1a5adc.js"
 );
 
 self.addEventListener('message', (event) => {
