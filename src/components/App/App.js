@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {deviceDetect, BrowserView, TabletView, MobileOnlyView} from 'react-device-detect';
 import styles from './App.module.css';
 import localizations from '../../localizations/localizations';
 import {useLocation} from 'react-router-dom';
@@ -31,38 +32,99 @@ function App() {
         });
     }, []);
     useEffect(() => {
+        console.log('User agent = ', deviceDetect());
+    }, []);
+    useEffect(() => {
         if (language) {
             console.log(`Language = ${language}`);
         }
     }, [language]);
     return (
         <div className={styles.App}>
-            <Freezing fullPageFreezing={true}
-                      leftHalfPageFreezing={true}
-                      rightHalfPageFreezing={true}
-                      firstBlockFreezing={true}
-                      secondBlockFreezing={true}
-                      thirdBlockFreezing={true}
-                      fourthBlockFreezing={true}
-                      firstHorizontalLineFreezing={true}
-                      secondHorizontalLineFreezing={true}
-                      thirdHorizontalLineFreezing={true}
-                      firstVerticalLineFreezing={true}
-                      secondVerticalLineFreezing={true}
-                      firstImageFreezing={true}
-                      startAnimationDuration={10}
-                      minAnimationDuration={8}
-                      maxAnimationDuration={12}
-                      startAnimationDelay={0}
-                      minAnimationDelay={0}
-                      maxAnimationDelay={3}>
-                <Header languages={localizations.getAvailableLanguages()}
-                        activeLanguage={language}
-                        setLanguage={setLanguage}
-                        languageButtonType={'circle'}/>
-                <Body/>
-                <Footer/>
-            </Freezing>
+            <BrowserView viewClassName={styles.Browser}>
+                <Freezing fullPageFreezing={true}
+                          leftHalfPageFreezing={true}
+                          rightHalfPageFreezing={true}
+                          firstBlockFreezing={true}
+                          secondBlockFreezing={true}
+                          thirdBlockFreezing={true}
+                          fourthBlockFreezing={true}
+                          firstHorizontalLineFreezing={true}
+                          secondHorizontalLineFreezing={true}
+                          thirdHorizontalLineFreezing={true}
+                          firstVerticalLineFreezing={true}
+                          secondVerticalLineFreezing={true}
+                          firstImageFreezing={true}
+                          startAnimationDuration={10}
+                          minAnimationDuration={8}
+                          maxAnimationDuration={12}
+                          startAnimationDelay={0}
+                          minAnimationDelay={0}
+                          maxAnimationDelay={3}>
+                    <Header languages={localizations.getAvailableLanguages()}
+                            activeLanguage={language}
+                            setLanguage={setLanguage}
+                            languageButtonType={'circle'}/>
+                    <Body/>
+                    <Footer/>
+                </Freezing>
+            </BrowserView>
+            <TabletView viewClassName={styles.Tablet}>
+                <Freezing fullPageFreezing={true}
+                          leftHalfPageFreezing={true}
+                          rightHalfPageFreezing={true}
+                          firstBlockFreezing={true}
+                          secondBlockFreezing={true}
+                          thirdBlockFreezing={true}
+                          fourthBlockFreezing={true}
+                          firstHorizontalLineFreezing={true}
+                          secondHorizontalLineFreezing={true}
+                          thirdHorizontalLineFreezing={true}
+                          firstVerticalLineFreezing={true}
+                          secondVerticalLineFreezing={true}
+                          firstImageFreezing={true}
+                          startAnimationDuration={10}
+                          minAnimationDuration={8}
+                          maxAnimationDuration={12}
+                          startAnimationDelay={0}
+                          minAnimationDelay={0}
+                          maxAnimationDelay={3}>
+                    <Header languages={localizations.getAvailableLanguages()}
+                            activeLanguage={language}
+                            setLanguage={setLanguage}
+                            languageButtonType={'circle'}/>
+                    <Body/>
+                    <Footer/>
+                </Freezing>
+            </TabletView>
+            <MobileOnlyView viewClassName={styles.Mobile}>
+                <Freezing fullPageFreezing={true}
+                          leftHalfPageFreezing={true}
+                          rightHalfPageFreezing={true}
+                          firstBlockFreezing={true}
+                          secondBlockFreezing={true}
+                          thirdBlockFreezing={true}
+                          fourthBlockFreezing={true}
+                          firstHorizontalLineFreezing={true}
+                          secondHorizontalLineFreezing={true}
+                          thirdHorizontalLineFreezing={true}
+                          firstVerticalLineFreezing={true}
+                          secondVerticalLineFreezing={true}
+                          firstImageFreezing={true}
+                          startAnimationDuration={10}
+                          minAnimationDuration={8}
+                          maxAnimationDuration={12}
+                          startAnimationDelay={0}
+                          minAnimationDelay={0}
+                          maxAnimationDelay={3}>
+                    <Header languages={localizations.getAvailableLanguages()}
+                            activeLanguage={language}
+                            setLanguage={setLanguage}
+                            languageButtonType={'circle'}/>
+                    <Body/>
+                    <Footer/>
+                </Freezing>
+            </MobileOnlyView>
         </div>
     );
 }
