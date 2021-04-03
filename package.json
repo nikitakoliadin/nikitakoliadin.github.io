@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "main": "index.js",
-  "homepage": "https://qThegamEp.github.io/qThegamEp.github.io",
+  "homepage": "https://qThegamEp.github.io",
   "eslintConfig": {
     "extends": "react-app"
   },
