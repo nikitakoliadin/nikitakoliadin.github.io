@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04a5f58086d597983ad2a2309cf26b2f",
+    "revision": "6fd80a511c894d51a15e9b0ab6b9bf9c",
     "url": "/qThegamEp.github.io/index.html"
   },
   {
-    "revision": "a6ce3426bb9cfe492a69",
+    "revision": "a592b98e9a2334867d51",
     "url": "/qThegamEp.github.io/static/css/2.95258f03.chunk.css"
   },
   {
-    "revision": "58ea8b9b44db70b602a9",
-    "url": "/qThegamEp.github.io/static/css/main.7796b0bb.chunk.css"
+    "revision": "c04e0510f6f870e20400",
+    "url": "/qThegamEp.github.io/static/css/main.ab353f64.chunk.css"
   },
   {
-    "revision": "a6ce3426bb9cfe492a69",
-    "url": "/qThegamEp.github.io/static/js/2.a58ba257.chunk.js"
+    "revision": "a592b98e9a2334867d51",
+    "url": "/qThegamEp.github.io/static/js/2.1b90476a.chunk.js"
   },
   {
-    "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/qThegamEp.github.io/static/js/2.a58ba257.chunk.js.LICENSE.txt"
+    "revision": "c791c2f6d4c2c2e583ac57622a771fcf",
+    "url": "/qThegamEp.github.io/static/js/2.1b90476a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58ea8b9b44db70b602a9",
-    "url": "/qThegamEp.github.io/static/js/main.e24109e5.chunk.js"
+    "revision": "c04e0510f6f870e20400",
+    "url": "/qThegamEp.github.io/static/js/main.1c4e887d.chunk.js"
   },
   {
     "revision": "ef99569e777e17a60e9f",
