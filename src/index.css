@@ -7,10 +7,14 @@
 }
 
 html {
+    height: 100%;
+    width: 100%;
     background: black;
 }
 
 body {
+    height: 100%;
+    width: 100%;
     margin: 0 !important;
     font-family: 'Anonymous Pro', monospace !important;
     -webkit-font-smoothing: antialiased !important;
@@ -23,4 +27,9 @@ code {
     font-family: 'Anonymous Pro', monospace !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
 }
