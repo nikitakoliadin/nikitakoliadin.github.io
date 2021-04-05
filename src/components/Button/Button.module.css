@@ -5,6 +5,7 @@
     justify-content: center;
     height: 7vh;
     width: 14vw;
+    font-family: 'Anonymous Pro', monospace;
     font-size: var(--medium-font);
     color: var(--white);
     background-color: transparent;
@@ -15,6 +16,7 @@
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
     box-shadow: 0 0 3px 3px var(--050-white);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    cursor: pointer;
 }
 
 .CircleButton {
@@ -24,6 +26,7 @@
     justify-content: center;
     height: 7vmin;
     width: 7vmin;
+    font-family: 'Anonymous Pro', monospace;
     font-size: var(--medium-font);
     color: var(--white);
     background-color: transparent;
@@ -34,6 +37,7 @@
     filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
     box-shadow: 0 0 3px 3px var(--050-white);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    cursor: pointer;
 }
 
 .RectangleButton:hover:not(:disabled),
@@ -52,4 +56,5 @@
     border: 2px solid var(--white);
     box-shadow: 0 0 10px 3px var(--white);
     transition: border 0s cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    cursor: inherit;
 }

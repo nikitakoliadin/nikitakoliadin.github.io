@@ -4,7 +4,6 @@ import * as serviceWorker from './serviceWorker';
 import {useController, ParallaxProvider} from 'react-scroll-parallax';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './components/App/App';
 
 console.log(`Version = ${process.env.REACT_APP_VERSION}`);
