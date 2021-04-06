@@ -9,7 +9,7 @@ function Body() {
             <div className={styles.Greeting}>
                 <LinearX letters={localizations.greeting}
                          centralize={true}
-                         size={window.innerWidth / 2}/>
+                         size={window.innerWidth / 25}/>
             </div>
         </div>
     );
