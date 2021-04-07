@@ -6,7 +6,7 @@ import LinearX from '../LinearX/LinearX';
 function Body() {
     return (
         <div className={styles.Body}>
-            <div className={styles.WhitePage}/>
+            <div className={styles.Empty}/>
             <div className={styles.Greeting}>
                 <LinearX letters={localizations.greeting}
                          centralize={true}

@@ -6,7 +6,7 @@
     z-index: 300;
 }
 
-.Body .WhitePage,
+.Body .Empty,
 .Body .Greeting,
 .Body .Introducing {
     display: flex;
