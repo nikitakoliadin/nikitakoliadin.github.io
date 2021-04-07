@@ -6,6 +6,17 @@
     z-index: 300;
 }
 
+.Body .WhitePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    mix-blend-mode: difference;
+    z-index: 300;
+}
+
 .Body .Greeting {
     display: flex;
     flex-direction: column;
