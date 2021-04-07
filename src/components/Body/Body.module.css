@@ -6,7 +6,9 @@
     z-index: 300;
 }
 
-.Body .WhitePage {
+.Body .WhitePage,
+.Body .Greeting,
+.Body .Introducing {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,12 +19,14 @@
     z-index: 300;
 }
 
-.Body .Greeting {
+.Body .Introducing .Me,
+.Body .Introducing .Name,
+.Body .Introducing .Surname {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 15vh;
     min-width: 100vw;
     mix-blend-mode: difference;
     z-index: 300;

@@ -12,6 +12,23 @@ function Body() {
                          centralize={true}
                          size={window.innerWidth / 25}/>
             </div>
+            <div className={styles.Introducing}>
+                <div className={styles.Me}>
+                    <LinearX letters={localizations.introducingMe}
+                             centralize={true}
+                             size={window.innerWidth / 25}/>
+                </div>
+                <div className={styles.Name}>
+                    <LinearX letters={localizations.introducingName}
+                             centralize={true}
+                             size={window.innerWidth / 25}/>
+                </div>
+                <div className={styles.Surname}>
+                    <LinearX letters={localizations.introducingSurname}
+                             centralize={true}
+                             size={window.innerWidth / 25}/>
+                </div>
+            </div>
         </div>
     );
 }
