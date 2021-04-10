@@ -39,6 +39,7 @@ function Body() {
                     split(localizations.explanation.toUpperCase())
                 }
             </div>
+            <div className={styles.Empty}/>
         </div>
     );
 }
