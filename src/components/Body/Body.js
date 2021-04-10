@@ -5,9 +5,10 @@ import LinearX from '../LinearX/LinearX';
 
 function Body() {
     function split(sentence) {
-        return sentence.split(' ').map(word => {
+        return sentence.split(' ').map((word, index) => {
             return (
-                <div className={styles.Text}>
+                <div key={index}
+                     className={styles.Text}>
                     <LinearX letters={word}
                              centralize={true}
                              size={window.innerWidth / 25}/>
