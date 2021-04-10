@@ -34,6 +34,11 @@ function Body() {
                     split(localizations.activity.toUpperCase())
                 }
             </div>
+            <div className={styles.Explanation}>
+                {
+                    split(localizations.explanation.toUpperCase())
+                }
+            </div>
         </div>
     );
 }

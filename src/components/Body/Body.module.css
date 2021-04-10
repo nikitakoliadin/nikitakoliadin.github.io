@@ -9,7 +9,8 @@
 .Body .Empty,
 .Body .Greeting,
 .Body .Introducing,
-.Body .Activity {
+.Body .Activity,
+.Body .Explanation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +23,8 @@
 
 .Body .Greeting .Text,
 .Body .Introducing .Text,
-.Body .Activity .Text {
+.Body .Activity .Text,
+.Body .Explanation .Text {
     display: flex;
     flex-direction: column;
     justify-content: center;
