@@ -8,7 +8,8 @@
 
 .Body .Empty,
 .Body .Greeting,
-.Body .Introducing {
+.Body .Introducing,
+.Body .Activity {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +22,10 @@
 
 .Body .Introducing .Me,
 .Body .Introducing .Name,
-.Body .Introducing .Surname {
+.Body .Introducing .Surname,
+.Body .Activity .And,
+.Body .Activity .Me,
+.Body .Activity .Position {
     display: flex;
     flex-direction: column;
     justify-content: center;

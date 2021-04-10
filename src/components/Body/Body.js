@@ -29,6 +29,29 @@ function Body() {
                              size={window.innerWidth / 25}/>
                 </div>
             </div>
+            <div className={styles.Activity}>
+                <div className={styles.And}>
+                    <LinearX letters={localizations.activityAnd}
+                             centralize={true}
+                             size={window.innerWidth / 25}/>
+                </div>
+                <div className={styles.Me}>
+                    <LinearX letters={localizations.activityMe}
+                             centralize={true}
+                             size={window.innerWidth / 25}/>
+                </div>
+                {
+                    localizations.activityPosition.split(' ').map(word => {
+                        return (
+                            <div className={styles.Position}>
+                                <LinearX letters={word}
+                                         centralize={true}
+                                         size={window.innerWidth / 25}/>
+                            </div>
+                        );
+                    })
+                }
+            </div>
         </div>
     );
 }
