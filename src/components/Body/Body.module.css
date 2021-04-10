@@ -20,12 +20,9 @@
     z-index: 300;
 }
 
-.Body .Introducing .Me,
-.Body .Introducing .Name,
-.Body .Introducing .Surname,
-.Body .Activity .And,
-.Body .Activity .Me,
-.Body .Activity .Position {
+.Body .Greeting .Text,
+.Body .Introducing .Text,
+.Body .Activity .Text {
     display: flex;
     flex-direction: column;
     justify-content: center;
