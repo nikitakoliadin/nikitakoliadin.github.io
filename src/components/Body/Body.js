@@ -39,6 +39,11 @@ function Body() {
                     split(localizations.explanation.toUpperCase())
                 }
             </div>
+            <div className={styles.Contacts}>
+                {
+                    split(localizations.contacts.toUpperCase())
+                }
+            </div>
             <div className={styles.Empty}/>
         </div>
     );
