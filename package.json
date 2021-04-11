@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "main": "index.js",
-  "homepage": "https://qThegamEp.github.io",
+  "homepage": "https://nikitakoliadin.github.io",
   "eslintConfig": {
     "extends": "react-app"
   },
