@@ -65,7 +65,7 @@ function App() {
                             activeLanguage={language}
                             setLanguage={setLanguage}
                             languageButtonType={'circle'}/>
-                    <Body/>
+                    <Body parallax={true}/>
                     <Footer/>
                 </Freezing>
             </BrowserView>
@@ -93,7 +93,7 @@ function App() {
                             activeLanguage={language}
                             setLanguage={setLanguage}
                             languageButtonType={'circle'}/>
-                    <Body/>
+                    <Body parallax={true}/>
                     <Footer/>
                 </Freezing>
             </TabletView>
@@ -121,7 +121,7 @@ function App() {
                             activeLanguage={language}
                             setLanguage={setLanguage}
                             languageButtonType={'circle'}/>
-                    <Body/>
+                    <Body parallax={true}/>
                     <Footer/>
                 </Freezing>
             </MobileOnlyView>

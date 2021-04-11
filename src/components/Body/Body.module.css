@@ -36,3 +36,14 @@
     mix-blend-mode: difference;
     z-index: 300;
 }
+
+.Body .Greeting .Text .Container,
+.Body .Introducing .Text .Container,
+.Body .Activity .Text .Container,
+.Body .Explanation .Text .Container,
+.Body .Contacts .Text .Container {
+    text-align: center;
+    font-size: var(--large-font);
+    color: var(--white);
+    filter: grayscale(1) contrast(2) drop-shadow(.1em .1em var(--white));
+}
