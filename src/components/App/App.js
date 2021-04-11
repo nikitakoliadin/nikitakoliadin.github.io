@@ -25,6 +25,15 @@ function App() {
         return localizations.getLanguage();
     }
 
+    function storage(event) {
+        const key = event.key;
+        const value = JSON.parse(event.newValue);
+        console.log(`Key = ${key} Value = ${value}`);
+        if (key === 'language') {
+            setLanguage(value);
+        }
+    }
+
     useEffect(() => {
         window.scrollTo({
             top: 0,
@@ -33,6 +42,11 @@ function App() {
     }, []);
     useEffect(() => {
         console.log('User agent = ', deviceDetect());
+    }, []);
+    useEffect(() => {
+        window.addEventListener('storage', storage);
+        return () => window.removeEventListener('storage', storage);
+        // eslint-disable-next-line
     }, []);
     useEffect(() => {
         if (language) {
