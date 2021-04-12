@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.04e2dd7a.chunk.css",
+    "main.css": "/static/css/main.c2a8a179.chunk.css",
     "main.js": "/static/js/main.bbf22213.chunk.js",
     "main.js.map": "/static/js/main.bbf22213.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8087ab6f.js",
@@ -8,9 +8,9 @@
     "static/js/2.397955a6.chunk.js": "/static/js/2.397955a6.chunk.js",
     "static/js/2.397955a6.chunk.js.map": "/static/js/2.397955a6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.93b72ee40dee8e56e9a8fc263f09671a.js": "/precache-manifest.93b72ee40dee8e56e9a8fc263f09671a.js",
+    "precache-manifest.91261f373bc9b075232bbb4613443709.js": "/precache-manifest.91261f373bc9b075232bbb4613443709.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.04e2dd7a.chunk.css.map": "/static/css/main.04e2dd7a.chunk.css.map",
+    "static/css/main.c2a8a179.chunk.css.map": "/static/css/main.c2a8a179.chunk.css.map",
     "static/js/2.397955a6.chunk.js.LICENSE.txt": "/static/js/2.397955a6.chunk.js.LICENSE.txt",
     "static/media/facebookLogo.1521ee91.svg": "/static/media/facebookLogo.1521ee91.svg",
     "static/media/firstImageFreezing.6d097e07.svg": "/static/media/firstImageFreezing.6d097e07.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.8087ab6f.js",
     "static/js/2.397955a6.chunk.js",
-    "static/css/main.04e2dd7a.chunk.css",
+    "static/css/main.c2a8a179.chunk.css",
     "static/js/main.bbf22213.chunk.js"
   ]
 }
