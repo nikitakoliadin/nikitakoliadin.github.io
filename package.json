@@ -1,8 +1,8 @@
 {
   "name": "nikitakoliadin.github.io",
   "version": "1.0.0",
-  "description": "Koliadin Nikita Page",
-  "author": "Koliadin Nikita",
+  "description": "Nikita Koliadin",
+  "author": "Nikita Koliadin",
   "license": "MIT",
   "private": true,
   "main": "index.js",
