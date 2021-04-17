@@ -7,7 +7,7 @@
     width: 100%;
     position: relative;
     background: inherit;
-    z-index: 400;
+    z-index: 600;
     mix-blend-mode: difference;
 }
 
@@ -20,7 +20,7 @@
     height: 10%;
     width: 100%;
     padding: 0 10% 0 0;
-    z-index: 400;
+    z-index: 600;
     mix-blend-mode: difference;
 }
 
@@ -33,7 +33,7 @@
     height: 10%;
     width: 100%;
     padding: 0 25% 0 0;
-    z-index: 400;
+    z-index: 600;
     mix-blend-mode: difference;
 }
 
@@ -45,7 +45,7 @@
     box-sizing: border-box;
     height: 10%;
     width: 100%;
-    z-index: 400;
+    z-index: 600;
     mix-blend-mode: difference;
 }
 
@@ -58,7 +58,7 @@
     height: 10%;
     width: 100%;
     padding: 0 0 0 25%;
-    z-index: 400;
+    z-index: 600;
     mix-blend-mode: difference;
 }
 
@@ -71,7 +71,7 @@
     height: 10%;
     width: 100%;
     padding: 0 0 0 10%;
-    z-index: 400;
+    z-index: 600;
     mix-blend-mode: difference;
 }
 
@@ -89,7 +89,7 @@
     background-color: transparent;
     border-radius: 25px;
     outline: none;
-    z-index: 400;
+    z-index: 600;
     box-shadow: -4px 0 2px -2px var(--050-white), 4px 0 2px -2px var(--050-white);
     transition: box-shadow 1s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
@@ -124,7 +124,7 @@
     padding: 0 10px 0 0;
     background: transparent;
     opacity: 1;
-    z-index: 400;
+    z-index: 600;
     filter: invert(1);
     mix-blend-mode: difference;
 }

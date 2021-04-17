@@ -7,4 +7,5 @@
 
 .Letters .Letter {
     display: inline-block;
+    z-index: 500;
 }

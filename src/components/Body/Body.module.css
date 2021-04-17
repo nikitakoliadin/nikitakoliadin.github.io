@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background: inherit;
-    z-index: 300;
+    z-index: 400;
 }
 
 .Body .Empty,
@@ -20,7 +20,7 @@
     min-height: 100vh;
     min-width: 100%;
     mix-blend-mode: difference;
-    z-index: 300;
+    z-index: 400;
 }
 
 .Body .Greeting .Text,
@@ -35,7 +35,7 @@
     min-height: 15vh;
     min-width: 100%;
     mix-blend-mode: difference;
-    z-index: 300;
+    z-index: 400;
 }
 
 .Body .Greeting .Text .Container,
