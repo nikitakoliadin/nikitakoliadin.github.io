@@ -3,6 +3,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    background: inherit;
 }
 
 .App .Browser,
@@ -14,6 +15,6 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    background: var(--black); /* TODO: ADD BACKGROUND IMAGE*/
+    background: inherit;
     z-index: 100;
 }
