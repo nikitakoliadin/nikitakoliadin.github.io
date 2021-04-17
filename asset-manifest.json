@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.14bd346b.chunk.css",
+    "main.css": "/static/css/main.fbd9bc26.chunk.css",
     "main.js": "/static/js/main.d890691a.chunk.js",
     "main.js.map": "/static/js/main.d890691a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8087ab6f.js",
@@ -8,9 +8,9 @@
     "static/js/2.d2adf3cb.chunk.js": "/static/js/2.d2adf3cb.chunk.js",
     "static/js/2.d2adf3cb.chunk.js.map": "/static/js/2.d2adf3cb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8d15a5d0ffacabd9e2a58cefcf546e51.js": "/precache-manifest.8d15a5d0ffacabd9e2a58cefcf546e51.js",
+    "precache-manifest.3a8c538e0d7e17b63d0f8e1cbc7ddac8.js": "/precache-manifest.3a8c538e0d7e17b63d0f8e1cbc7ddac8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.14bd346b.chunk.css.map": "/static/css/main.14bd346b.chunk.css.map",
+    "static/css/main.fbd9bc26.chunk.css.map": "/static/css/main.fbd9bc26.chunk.css.map",
     "static/js/2.d2adf3cb.chunk.js.LICENSE.txt": "/static/js/2.d2adf3cb.chunk.js.LICENSE.txt",
     "static/media/background.jpg": "/static/media/background.3b5b6cd8.jpg",
     "static/media/facebookLogo.1521ee91.svg": "/static/media/facebookLogo.1521ee91.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.8087ab6f.js",
     "static/js/2.d2adf3cb.chunk.js",
-    "static/css/main.14bd346b.chunk.css",
+    "static/css/main.fbd9bc26.chunk.css",
     "static/js/main.d890691a.chunk.js"
   ]
 }
