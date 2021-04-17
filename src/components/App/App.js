@@ -6,6 +6,7 @@ import {useLocation} from 'react-router-dom';
 import queryParser from 'query-string';
 import {useLocalStorage} from '../../hooks/useLocalStorage';
 import Freezing from '../Freezing/Freezing';
+import Background from '../Background/Background';
 import Header from '../Header/Header';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
@@ -75,6 +76,7 @@ function App() {
                           startAnimationDelay={0}
                           minAnimationDelay={0}
                           maxAnimationDelay={3}>
+                    <Background/>
                     <Header languages={localizations.getAvailableLanguages()}
                             activeLanguage={language}
                             setLanguage={setLanguage}
@@ -103,6 +105,7 @@ function App() {
                           startAnimationDelay={0}
                           minAnimationDelay={0}
                           maxAnimationDelay={3}>
+                    <Background/>
                     <Header languages={localizations.getAvailableLanguages()}
                             activeLanguage={language}
                             setLanguage={setLanguage}
@@ -131,6 +134,7 @@ function App() {
                           startAnimationDelay={0}
                           minAnimationDelay={0}
                           maxAnimationDelay={3}>
+                    <Background/>
                     <Header languages={localizations.getAvailableLanguages()}
                             activeLanguage={language}
                             setLanguage={setLanguage}
