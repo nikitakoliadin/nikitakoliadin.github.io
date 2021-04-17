@@ -5,10 +5,8 @@
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    position: relative;
     background: inherit;
     z-index: 600;
-    mix-blend-mode: difference;
 }
 
 .Footer .Row1 {
