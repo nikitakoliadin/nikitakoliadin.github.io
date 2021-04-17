@@ -20,6 +20,8 @@
         animation: fullPageFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 295;
+        opacity: 0;
     }
 }
 
@@ -38,6 +40,8 @@
         animation: leftHalfPageFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 290;
+        opacity: 0;
     }
 }
 
@@ -56,6 +60,8 @@
         animation: rightHalfPageFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 290;
+        opacity: 0;
     }
 }
 
@@ -74,6 +80,8 @@
         animation: firstBlockFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 285;
+        opacity: 0;
     }
 }
 
@@ -92,6 +100,8 @@
         animation: secondBlockFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 285;
+        opacity: 0;
     }
 }
 
@@ -110,6 +120,8 @@
         animation: thirdBlockFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 285;
+        opacity: 0;
     }
 }
 
@@ -128,6 +140,8 @@
         animation: fourthBlockFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 285;
+        opacity: 0;
     }
 }
 
@@ -145,6 +159,8 @@
         animation: firstHorizontalLineFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 280;
+        opacity: 0;
     }
 }
 
@@ -162,6 +178,8 @@
         animation: secondHorizontalLineFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 280;
+        opacity: 0;
     }
 }
 
@@ -179,6 +197,8 @@
         animation: thirdHorizontalLineFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 280;
+        opacity: 0;
     }
 }
 
@@ -196,6 +216,8 @@
         animation: firstVerticalLineFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 275;
+        opacity: 0;
     }
 }
 
@@ -213,6 +235,8 @@
         animation: secondVerticalLineFreezing;
         animation-iteration-count: infinite;
         animation-play-state: running;
+        z-index: 275;
+        opacity: 0;
     }
 }
 
@@ -238,317 +262,527 @@
 
 @keyframes fullPageFreezing {
     88% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     89% {
+        background: black;
+        opacity: 1;
         z-index: 295;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     90% {
+        background: black;
+        opacity: 1;
         z-index: 295;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     91% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes leftHalfPageFreezing {
     80% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     81% {
+        background: black;
+        opacity: 1;
         z-index: 290;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     82% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes rightHalfPageFreezing {
     70% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     71% {
+        background: black;
+        opacity: 1;
         z-index: 290;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     72% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     83% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     84% {
+        background: black;
+        opacity: 1;
         z-index: 290;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     85% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes firstBlockFreezing {
     40% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     41% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     42% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     83% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     84% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     85% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     86% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes secondBlockFreezing {
     30% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     31% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     32% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     50% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     51% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     52% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     53% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     54% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     55% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     56% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes thirdBlockFreezing {
     38% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     39% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     40% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     46% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     47% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     48% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     49% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes fourthBlockFreezing {
     46% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     47% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     48% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     49% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     91% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     92% {
+        background: black;
+        opacity: 1;
         z-index: 285;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     93% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes firstHorizontalLineFreezing {
     20% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     21% {
+        background: black;
+        opacity: 1;
         z-index: 280;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     22% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     26% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     27% {
+        background: black;
+        opacity: 1;
         z-index: 280;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     28% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     29% {
+        background: black;
+        opacity: 1;
         z-index: 280;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     30% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     90% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     91% {
+        background: black;
+        opacity: 1;
         z-index: 280;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     92% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes secondHorizontalLineFreezing {
     28% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     29% {
+        background: black;
+        opacity: 1;
         z-index: 280;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     30% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes thirdHorizontalLineFreezing {
     28% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     29% {
+        background: black;
+        opacity: 1;
         z-index: 280;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     30% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes firstVerticalLineFreezing {
     27% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     28% {
+        background: black;
+        opacity: 1;
         z-index: 275;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     29% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
 @keyframes secondVerticalLineFreezing {
     27% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     28% {
+        background: black;
+        opacity: 1;
         z-index: 275;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     29% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     91% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
     92% {
+        background: black;
+        opacity: 1;
         z-index: 275;
         filter: invert(1);
+        mix-blend-mode: difference;
     }
     93% {
+        background: transparent;
+        opacity: 0;
         z-index: 200;
         filter: invert(0);
+        mix-blend-mode: difference;
     }
 }
 
