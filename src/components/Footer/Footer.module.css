@@ -6,8 +6,9 @@
     height: 100%;
     width: 100%;
     position: relative;
-    mix-blend-mode: difference;
+    background: inherit;
     z-index: 400;
+    mix-blend-mode: difference;
 }
 
 .Footer .Row1 {
@@ -20,6 +21,7 @@
     width: 100%;
     padding: 0 10% 0 0;
     z-index: 400;
+    mix-blend-mode: difference;
 }
 
 .Footer .Row2 {
@@ -32,6 +34,7 @@
     width: 100%;
     padding: 0 25% 0 0;
     z-index: 400;
+    mix-blend-mode: difference;
 }
 
 .Footer .Row3 {
@@ -43,6 +46,7 @@
     height: 10%;
     width: 100%;
     z-index: 400;
+    mix-blend-mode: difference;
 }
 
 .Footer .Row4 {
@@ -55,6 +59,7 @@
     width: 100%;
     padding: 0 0 0 25%;
     z-index: 400;
+    mix-blend-mode: difference;
 }
 
 .Footer .Row5 {
@@ -67,6 +72,7 @@
     width: 100%;
     padding: 0 0 0 10%;
     z-index: 400;
+    mix-blend-mode: difference;
 }
 
 .Footer .Row1 .Link,
